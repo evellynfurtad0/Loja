@@ -18,30 +18,28 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Teclado Gamer</td>
-                        <td>120,99</td>
-                        <td>10</td>
+
+                <?php
+                    require 'conexao.php';
+                    $sql = "SELECT * FROM produtos";
+                    $stmt = $pdo->query($sql);
+                    while ($produto = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                        echo"<tr>";
+                        echo"<td>".$produto['id']."</td>";
+                        echo"<td>".$produto['nome']."</td>";
+                        echo"<td>".$produto['preco']."</td>";
+                        echo"<td>".$produto['quantidade']."</td>";
+                        echo"
                         <td>
-                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                <a href="#" type="button" class="btn btn-danger">Atualizar</a>
-                                <a href="#" type="button" class="btn btn-warning">Apagar</a>
+                            <div class='tn-group' role='group' aria-label='Basic mixed styles example'>
+                                <a href='#' type='button' class='btn btn-danger'>Atualizar</a>
+                                <a href='#' type='button' class='btn btn-warning'>Apagar</a>
                             </div>
                         </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Monitor LCD 20 polegadas</td>
-                        <td>599,99</td>
-                        <td>70</td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                <a href="#" type="button" class="btn btn-danger">Atualizar</a>
-                                <a href="#" type="button" class="btn btn-warning">Apagar</a>
-                            </div>
-                        </td>
-                    </tr>
+                        ";
+                        echo"</tr>";
+                    }
+                ?>
                 </tbody>
             </table>
             <a href="index.php" type="button" class="btn btn-warning">Voltar</a>
