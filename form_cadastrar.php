@@ -5,7 +5,7 @@
 <body>
     <div class="container">
         <h1>Bem vindo ao 1º Sistema Web com CRUD</h1>
-        <h2>Laura Romano e Evellyn Furtado</h2>
+        <h2>Evellyn Furtado</h2>
         <form action="inserir.php" method="POST">
             <div class="mb-3">
                 <input type="text" class="form-control" name="produto" placeholder="Digite o nome do produto">
