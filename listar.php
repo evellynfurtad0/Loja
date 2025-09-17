@@ -2,7 +2,6 @@
     include 'cabecalho.php';
 ?>
 
-<body>
     <div class="container">
         <h1>Sistema Web com CRUD</h1>
         <h2>Lista de Produtos</h2>
