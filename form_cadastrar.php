@@ -1,7 +1,6 @@
 <?php
     include 'cabecalho.php';
 ?>
-
 <body>
     <div class="container">
         <h1>Bem vindo ao 1º Sistema Web com CRUD</h1>

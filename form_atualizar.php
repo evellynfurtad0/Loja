@@ -2,7 +2,6 @@
     include 'cabecalho.php';
     $id = $_GET['id'];
 ?>
-
 <body>
     <div class="container">
         <h1>ATUALIZAÇÃO DE PRODUTOS</h1>

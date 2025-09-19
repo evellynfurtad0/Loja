@@ -1,7 +1,7 @@
 <?php
     include 'cabecalho.php';
 ?>
-
+<body>
     <div class="container">
         <h1>Sistema Web com CRUD</h1>
         <h2>Lista de Produtos</h2>
@@ -31,8 +31,8 @@
                         echo"
                         <td>
                             <div class='tn-group' role='group' aria-label='Basic mixed styles example'>
-                                <a href='form_atualizar.php?id=".$produto['id']."' type='button' class='btn btn-danger'>Atualizar</a>
-                                <a href='#' type='button' class='btn btn-warning'>Apagar</a>
+                                <a href='form_atualizar.php?id=".$produto['id']."' class='btn btn-danger'>Atualizar</a>
+                                <a href='#' class='btn btn-warning'>Apagar</a>
                             </div>
                         </td>
                         ";

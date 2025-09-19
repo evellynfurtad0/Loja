@@ -1,14 +1,13 @@
 <?php
     include 'cabecalho.php';
 ?>
-</head>
 <body>
     <div class="container">
         <h1>Bem vindo ao 1º Sistema Web com CRUD</h1>
         <h2>Laura Romano e Evellyn Furtado</h2>
-        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-            <a href="form_cadastrar.php" type="button" class="btn btn-danger">Cadastrar</a>
-            <a href="listar.php" type="button" class="btn btn-warning">Listar</a>
+        <div class="btn-group">
+            <a href="form_cadastrar.php" class="btn btn-danger">Cadastrar</a>
+            <a href="listar.php" class="btn btn-warning">Listar</a>
         </div>
     </div>
 
