@@ -14,7 +14,7 @@
     $stmt->bindParam(':quantidade', $estoque); #pegando o que ta dentro do estoque e passando para a quantidade
 
     if ($stmt->execute()) {
-      echo "Produto inserido com sucesso!";
+      header("Location: listar.php");
     } else {
       echo "Erro ao inserir produto.";
     }

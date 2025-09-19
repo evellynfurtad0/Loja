@@ -4,6 +4,7 @@
 ?>
 <body>
     <div class="container">
+    <form action="atualizar.php?id= <?php echo $id ?> " method="POST">
         <h1>ATUALIZAÇÃO DE PRODUTOS</h1>
         <?php
             require 'conexao.php';
@@ -31,7 +32,7 @@
                 Quantidade:<input value=" <?php echo $produto['quantidade']?>"  
                 type="text" class="form-control" name="estoque">
             </div>
-            <button type="submit" class="btn btn-primary">Atualizar</button>
+            <a href="listar.php" type="submit" class="btn btn-primary">Atualizar</a>
             <a href="index.php" type="button" class="btn btn-warning">Voltar</a>
 
              <!-- 

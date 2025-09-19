@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Ago-2025 às 16:08
--- Versão do servidor: 10.4.32-MariaDB
--- versão do PHP: 8.2.12
+-- Tempo de geração: 19-Set-2025 às 21:54
+-- Versão do servidor: 10.4.22-MariaDB
+-- versão do PHP: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,7 +34,15 @@ CREATE TABLE `produtos` (
   `nome` varchar(255) NOT NULL,
   `preco` decimal(10,2) NOT NULL,
   `quantidade` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `produtos`
+--
+
+INSERT INTO `produtos` (`id`, `nome`, `preco`, `quantidade`) VALUES
+(2, 'Microfone ', '200.00', 5),
+(7, 'Microfone vermelho', '200.00', 5);
 
 --
 -- Índices para tabelas despejadas
@@ -54,7 +62,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
