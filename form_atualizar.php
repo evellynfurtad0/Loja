@@ -32,7 +32,7 @@
                 Quantidade:<input value=" <?php echo $produto['quantidade']?>"  
                 type="text" class="form-control" name="estoque">
             </div>
-            <a href="listar.php" type="submit" class="btn btn-primary">Atualizar</a>
+            <button type="submit" class="btn btn-primary">Atualizar</button>
             <a href="index.php" type="button" class="btn btn-warning">Voltar</a>
 
              <!-- 
